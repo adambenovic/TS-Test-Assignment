@@ -2,9 +2,9 @@
   "name": "test-assignment",
   "version": "1.0.0",
   "description": "Test assignment for backend developer in Vestberry",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,10 +21,14 @@
   "homepage": "https://github.com/VESTBERRY/Test-backend-assigmnet#readme",
   "dependencies": {
     "@babel/cli": "^7.11.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
-    "graphql-tools": "^6.2.3"
+    "graphql-tools": "^6.2.3",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

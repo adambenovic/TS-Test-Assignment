@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    command: yarn start
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://vestberry@postgres/vestberry
+  postgres:
+    image: postgres:13.4-alpine
+    environment:
+      POSTGRES_USER: vestberry
+      POSTGRES_PASSWORD: vestberry123
+      POSTGRES_DB: vestberry
