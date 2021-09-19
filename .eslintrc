@@ -1,11 +1,12 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "extends": [
-        "standard",
+        "standard"
     ],
     "plugins": [
         "babel",
         "promise",
+        "@typescript-eslint"
     ],
     "env": {
         "browser": true
@@ -20,9 +21,11 @@
         "key-spacing": "off",
         "jsx-quotes": [2, "prefer-double"],
         "max-len": [2, 120, 2],
-        "object-curly-spacing": [2, "never"],
-        "semi": [2, "never"],
         "comma-dangle": "off",
-        "complexity": ["error", { "max": 4 }]
+        "complexity": ["error", { "max": 4 }],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
+        "object-curly-spacing": ["error", "always"],
+        "quotes": ["error"]
     }
 }
