@@ -4,41 +4,39 @@ Task is to create backend application in Node.js using any SQL database. This ap
 
 ## Use cases:
 
-* User should be able to log in.
-* User should be able to add new book, edit existing book, and delete book. User should be able to “travel back” in time and see older state of any book or library.
-* Anonymous user should be able to find some book by author name or book title.
-* Pagination is not required but is big plus.
+* User should be able to:
+    * [x] log in
+    * [x] add new bookedit
+    * [x] edit existing book
+    * [x] delete book
+    * [x] “travel back” in time and see older state of any book (or library?).
+* [x] Anonymous user should be able to find some book by author name or book title.
+* [ ] Pagination is not required but is big plus.
 
 ## Minimum data requirements:
 
-* User: email, password
-* Book: title, author, year of publication, genres, rating
+* User:
+    * [x] email
+    * [x] password
+* Book:
+    * [x] title
+    * [x] author
+    * [x] year of publication
+    * [ ] genres - only a single field in DB, not standalone entity with realtions
+    * [x] rating
 
-You can model SQL schema as you consider best. The same applies for GraphQL schema.
-
-## Additional informations:
-
-* Feel free to use any additional library you might need for completing this project, or change structure or anything
-* We would like to see, how will you solve this task in terms of end result precision, code quality & readability
+NOTE: There are no fixtures.
 
 ## Sample project Requirements
-* node `^10.7.0`
-* yarn `^1.9.2` or npm `^6.2.0`
-* babel-cli `^6.26.0`
+* Docker
 
 ## Installation
 
 After confirming that your environment meets the above [requirements](#requirements), clone `vestberry` by doing the following:
 
 ```bash
-$ git clone git@github.com:VESTBERRY/Test-backend-assignment.git <directory>
+$ git clone git@github.com:ADes-FIIT/Vestberry-Test-Assignment.git <directory>
 $ cd <directory>
-```
-
-When that's done, install the project dependencies. It is recommended that you use [Yarn](https://yarnpkg.com/) for deterministic dependency management, but `npm install` will suffice.
-
-```bash
-$ yarn  # Install project dependencies (or `npm install`)
 ```
 
 ## Running the Project
@@ -46,7 +44,7 @@ $ yarn  # Install project dependencies (or `npm install`)
 After completing the [installation](#installation) step, you're ready to start the project!
 
 ```bash
-$ yarn start  # Start the development server (or `npm start`)
+$ docker-compose up
 ```
 
 After this you can open in your browser the GraphiQL at [http://localhost:8000/graphql](http://localhost:8000/graphql)
