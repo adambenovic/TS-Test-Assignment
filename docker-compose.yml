@@ -5,7 +5,7 @@ services:
     command: yarn start
     volumes:
       - .:/usr/app/
-      - ./node_modules:/usr/app/node_modules
+      - /usr/app/node_modules
     ports:
       - 8000:8000
     depends_on:
