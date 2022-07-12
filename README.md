@@ -35,7 +35,7 @@ NOTE: There are no fixtures.
 After confirming that your environment meets the above [requirements](#requirements), clone `vestberry` by doing the following:
 
 ```bash
-$ git clone git@github.com:ADes-FIIT/Vestberry-Test-Assignment.git <directory>
+$ git clone git@github.com:adambenovic/TS-Test-Assignment.git <directory>
 $ cd <directory>
 ```
 
